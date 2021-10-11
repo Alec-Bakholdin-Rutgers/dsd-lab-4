@@ -5,17 +5,18 @@ s => s.IN1
 e => e.IN1
 w => w.IN1
 reset => reset.IN2
-s6 <= room:comb_3.port7
-win <= room:comb_3.port8
-s5 <= room:comb_3.port9
-d <= room:comb_3.port10
-s4 <= room:comb_3.port11
-s3 <= room:comb_3.port12
-sw <= sw.DB_MAX_OUTPUT_PORT_TYPE
-s2 <= room:comb_3.port14
-s1 <= room:comb_3.port15
-s0 <= room:comb_3.port16
-v <= v.DB_MAX_OUTPUT_PORT_TYPE
+pwin => pwin.IN2
+s6 << room:comb_3.port8
+win << room:comb_3.port9
+s5 << room:comb_3.port10
+d << room:comb_3.port11
+s4 << room:comb_3.port12
+s3 << room:comb_3.port13
+sw << sw.DB_MAX_OUTPUT_PORT_TYPE
+s2 << room:comb_3.port15
+s1 << room:comb_3.port16
+s0 << room:comb_3.port17
+v << v.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |game|room:comb_3
@@ -79,21 +80,26 @@ w => Equal12.IN58
 v => comb.IN1
 v => comb.IN1
 reset => comb.IN1
+reset => comb.IN0
+reset => comb.IN0
+reset => comb.IN0
+reset => comb.IN0
 reset => comb.IN1
 reset => comb.IN1
-reset => comb.IN1
-reset => comb.IN1
-reset => comb.IN1
-reset => comb.IN1
-s6 <= d_ff:comb_545.port2
-win <= d_ff:comb_540.port2
-s5 <= d_ff:comb_540.port2
-d <= d_ff:comb_545.port2
-s4 <= d_ff:comb_502.port2
-s3 <= d_ff:comb_429.port2
-sw <= d_ff:comb_429.port2
-s2 <= d_ff:comb_250.port2
-s1 <= d_ff:comb_107.port2
+pwin => comb.IN1
+pwin => comb.IN1
+pwin => comb.IN1
+pwin => comb.IN1
+pwin => comb.IN1
+s6 <= d_ff:comb_561.port2
+win <= d_ff:comb_555.port2
+s5 <= d_ff:comb_555.port2
+d <= d_ff:comb_561.port2
+s4 <= d_ff:comb_515.port2
+s3 <= d_ff:comb_440.port2
+sw <= d_ff:comb_440.port2
+s2 <= d_ff:comb_259.port2
+s1 <= d_ff:comb_114.port2
 s0 <= d_ff:comb_35.port2
 
 
@@ -103,37 +109,37 @@ clk => q~reg0.CLK
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|game|room:comb_3|d_ff:comb_107
+|game|room:comb_3|d_ff:comb_114
 d => q~reg0.DATAIN
 clk => q~reg0.CLK
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|game|room:comb_3|d_ff:comb_250
+|game|room:comb_3|d_ff:comb_259
 d => q~reg0.DATAIN
 clk => q~reg0.CLK
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|game|room:comb_3|d_ff:comb_429
+|game|room:comb_3|d_ff:comb_440
 d => q~reg0.DATAIN
 clk => q~reg0.CLK
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|game|room:comb_3|d_ff:comb_502
+|game|room:comb_3|d_ff:comb_515
 d => q~reg0.DATAIN
 clk => q~reg0.CLK
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|game|room:comb_3|d_ff:comb_540
+|game|room:comb_3|d_ff:comb_555
 d => q~reg0.DATAIN
 clk => q~reg0.CLK
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|game|room:comb_3|d_ff:comb_545
+|game|room:comb_3|d_ff:comb_561
 d => q~reg0.DATAIN
 clk => q~reg0.CLK
 q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -143,6 +149,7 @@ q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sw => comb.IN1
 reset => comb.IN1
 clk => clk.IN1
+pwin => comb.IN1
 v <= d_ff:comb_3.port2
 
 
