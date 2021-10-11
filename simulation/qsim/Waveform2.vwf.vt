@@ -1,0 +1,133 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/11/2021 10:11:21"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          game
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module game_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg e;
+reg n;
+reg reset;
+reg s;
+reg w;
+// wires                                               
+wire d;
+wire s0;
+wire s1;
+wire s2;
+wire s3;
+wire s4;
+wire s5;
+wire s6;
+wire sw;
+wire v;
+wire win;
+
+// assign statements (if any)                          
+game i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.d(d),
+	.e(e),
+	.n(n),
+	.reset(reset),
+	.s(s),
+	.s0(s0),
+	.s1(s1),
+	.s2(s2),
+	.s3(s3),
+	.s4(s4),
+	.s5(s5),
+	.s6(s6),
+	.sw(sw),
+	.v(v),
+	.w(w),
+	.win(win)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+initial
+begin
+	repeat(12)
+	begin
+		clk = 1'b0;
+		clk = #40000 1'b1;
+		# 40000;
+	end
+	clk = 1'b0;
+end 
+
+// n
+initial
+begin
+	n = 1'b0;
+end 
+
+// s
+initial
+begin
+	s = 1'b0;
+	s = #160000 1'b1;
+	s = #40000 1'b0;
+	s = #280000 1'b1;
+	s = #40000 1'b0;
+end 
+
+// e
+initial
+begin
+	e = 1'b0;
+	e = #80000 1'b1;
+	e = #40000 1'b0;
+	e = #200000 1'b1;
+	e = #200000 1'b0;
+end 
+
+// w
+initial
+begin
+	w = 1'b0;
+	w = #240000 1'b1;
+	w = #40000 1'b0;
+	w = #440000 1'b1;
+	w = #40000 1'b0;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b1;
+	reset = #40000 1'b0;
+end 
+endmodule
+

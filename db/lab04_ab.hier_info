@@ -1,0 +1,154 @@
+|game
+clk => clk.IN2
+n => n.IN1
+s => s.IN1
+e => e.IN1
+w => w.IN1
+reset => reset.IN2
+s6 << room:comb_3.port7
+win << room:comb_3.port8
+s5 << room:comb_3.port9
+d << room:comb_3.port10
+s4 << room:comb_3.port11
+s3 << room:comb_3.port12
+sw << sw.DB_MAX_OUTPUT_PORT_TYPE
+s2 << room:comb_3.port14
+s1 << room:comb_3.port15
+s0 << room:comb_3.port16
+v << v.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:comb_3
+clk => clk.IN7
+n => Equal10.IN60
+n => Equal13.IN60
+n => Equal0.IN56
+n => Equal1.IN56
+n => Equal2.IN56
+n => Equal3.IN59
+n => Equal4.IN56
+n => Equal5.IN56
+n => Equal6.IN56
+n => Equal7.IN56
+n => Equal8.IN59
+n => Equal9.IN56
+n => Equal11.IN56
+n => Equal12.IN56
+s => Equal10.IN61
+s => Equal13.IN61
+s => Equal0.IN57
+s => Equal1.IN57
+s => Equal2.IN57
+s => Equal3.IN56
+s => Equal4.IN57
+s => Equal5.IN59
+s => Equal6.IN59
+s => Equal7.IN57
+s => Equal8.IN56
+s => Equal9.IN57
+s => Equal11.IN57
+s => Equal12.IN57
+e => Equal10.IN62
+e => Equal13.IN62
+e => Equal0.IN58
+e => Equal1.IN59
+e => Equal2.IN59
+e => Equal3.IN57
+e => Equal4.IN58
+e => Equal5.IN57
+e => Equal6.IN57
+e => Equal7.IN59
+e => Equal8.IN57
+e => Equal9.IN58
+e => Equal11.IN58
+e => Equal12.IN59
+w => Equal10.IN63
+w => Equal13.IN63
+w => Equal0.IN59
+w => Equal1.IN58
+w => Equal2.IN58
+w => Equal3.IN58
+w => Equal4.IN59
+w => Equal5.IN58
+w => Equal6.IN58
+w => Equal7.IN58
+w => Equal8.IN58
+w => Equal9.IN59
+w => Equal11.IN59
+w => Equal12.IN58
+v => comb.IN1
+v => comb.IN1
+reset => comb.IN1
+reset => comb.IN1
+reset => comb.IN1
+reset => comb.IN1
+reset => comb.IN1
+reset => comb.IN1
+reset => comb.IN1
+s6 <= d_ff:comb_545.port2
+win <= d_ff:comb_540.port2
+s5 <= d_ff:comb_540.port2
+d <= d_ff:comb_545.port2
+s4 <= d_ff:comb_502.port2
+s3 <= d_ff:comb_429.port2
+sw <= d_ff:comb_429.port2
+s2 <= d_ff:comb_250.port2
+s1 <= d_ff:comb_107.port2
+s0 <= d_ff:comb_35.port2
+
+
+|game|room:comb_3|d_ff:comb_35
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:comb_3|d_ff:comb_107
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:comb_3|d_ff:comb_250
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:comb_3|d_ff:comb_429
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:comb_3|d_ff:comb_502
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:comb_3|d_ff:comb_540
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|room:comb_3|d_ff:comb_545
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|game|sword:comb_4
+sw => comb.IN1
+reset => comb.IN1
+clk => clk.IN1
+v <= d_ff:comb_3.port2
+
+
+|game|sword:comb_4|d_ff:comb_3
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

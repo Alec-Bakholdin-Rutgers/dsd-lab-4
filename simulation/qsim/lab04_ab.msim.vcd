@@ -1,0 +1,400 @@
+$comment
+	File created using the following command:
+		vcd file lab04_ab.msim.vcd -direction
+$end
+$date
+	Mon Oct 11 10:11:22 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module game_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " e $end
+$var reg 1 # n $end
+$var reg 1 $ reset $end
+$var reg 1 % s $end
+$var reg 1 & w $end
+$var wire 1 ' d $end
+$var wire 1 ( s0 $end
+$var wire 1 ) s1 $end
+$var wire 1 * s2 $end
+$var wire 1 + s3 $end
+$var wire 1 , s4 $end
+$var wire 1 - s5 $end
+$var wire 1 . s6 $end
+$var wire 1 / sw $end
+$var wire 1 0 v $end
+$var wire 1 1 win $end
+
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var tri1 1 5 devclrn $end
+$var tri1 1 6 devpor $end
+$var tri1 1 7 devoe $end
+$var wire 1 8 s6~output_o $end
+$var wire 1 9 win~output_o $end
+$var wire 1 : s5~output_o $end
+$var wire 1 ; d~output_o $end
+$var wire 1 < s4~output_o $end
+$var wire 1 = s3~output_o $end
+$var wire 1 > sw~output_o $end
+$var wire 1 ? s2~output_o $end
+$var wire 1 @ s1~output_o $end
+$var wire 1 A s0~output_o $end
+$var wire 1 B v~output_o $end
+$var wire 1 C clk~input_o $end
+$var wire 1 D clk~inputclkctrl_outclk $end
+$var wire 1 E e~input_o $end
+$var wire 1 F s~input_o $end
+$var wire 1 G n~input_o $end
+$var wire 1 H w~input_o $end
+$var wire 1 I comb_3|comb~2_combout $end
+$var wire 1 J reset~input_o $end
+$var wire 1 K comb_3|comb~9_combout $end
+$var wire 1 L comb_3|comb~6_combout $end
+$var wire 1 M comb_3|Equal9~0_combout $end
+$var wire 1 N comb_3|comb~7_combout $end
+$var wire 1 O comb_3|Equal12~0_combout $end
+$var wire 1 P comb_3|comb~4_combout $end
+$var wire 1 Q comb_3|comb~5_combout $end
+$var wire 1 R comb_3|comb_429|q~q $end
+$var wire 1 S comb_3|comb~11_combout $end
+$var wire 1 T comb_3|comb~15_combout $end
+$var wire 1 U comb_3|comb~16_combout $end
+$var wire 1 V comb_3|comb_35|q~q $end
+$var wire 1 W comb_3|comb~12_combout $end
+$var wire 1 X comb_3|comb~13_combout $end
+$var wire 1 Y comb_3|comb~14_combout $end
+$var wire 1 Z comb_3|comb_107|q~q $end
+$var wire 1 [ comb_3|comb~8_combout $end
+$var wire 1 \ comb_3|comb~10_combout $end
+$var wire 1 ] comb_3|comb_250|q~q $end
+$var wire 1 ^ comb_3|comb~3_combout $end
+$var wire 1 _ comb_3|comb_502|q~q $end
+$var wire 1 ` comb_4|comb~0_combout $end
+$var wire 1 a comb_4|comb_3|q~q $end
+$var wire 1 b comb_3|comb~0_combout $end
+$var wire 1 c comb_3|comb_545|q~q $end
+$var wire 1 d comb_3|comb~1_combout $end
+$var wire 1 e comb_3|comb_540|q~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+1$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+13
+x4
+15
+16
+17
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+1J
+0K
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+1U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+$end
+#40000
+1!
+0$
+1C
+0J
+1D
+1K
+0U
+1V
+1A
+1(
+1U
+#80000
+1"
+0!
+1E
+0C
+0D
+1X
+1O
+1Y
+0U
+#120000
+0"
+1!
+0E
+1C
+1D
+0X
+0O
+0Y
+1U
+1Z
+0V
+0A
+1@
+1S
+1)
+0(
+0U
+1Y
+#160000
+1%
+0!
+1F
+0C
+0D
+1[
+1I
+0S
+1\
+0Y
+#200000
+0%
+1!
+0F
+1C
+1D
+0[
+0I
+1S
+0\
+1Y
+1]
+0Z
+0@
+1?
+1N
+0S
+1*
+0)
+1\
+0Y
+#240000
+1&
+0!
+1H
+0C
+0D
+1M
+0K
+1P
+0N
+1Q
+0\
+#280000
+0&
+1!
+0H
+1C
+1D
+0M
+1K
+0P
+1N
+0Q
+1\
+0]
+1R
+1=
+1>
+0?
+0N
+0*
+1/
+1+
+1`
+1Q
+0\
+#320000
+1"
+0!
+1E
+0C
+0D
+1[
+1O
+1\
+0Q
+#360000
+1!
+1C
+1D
+1a
+1]
+0R
+0=
+0>
+1?
+1B
+1N
+0[
+10
+1*
+0/
+0+
+#400000
+0!
+0C
+0D
+#440000
+1!
+1C
+1D
+#480000
+1%
+0!
+1F
+0C
+0D
+0O
+0L
+1I
+0N
+1^
+0\
+#520000
+0"
+0%
+1!
+0E
+0F
+1C
+1D
+1L
+0I
+0^
+1N
+1\
+1_
+0]
+0?
+1<
+0N
+1,
+0*
+1d
+0\
+#560000
+0!
+0C
+0D
+#600000
+1!
+1C
+1D
+1e
+0_
+0<
+19
+1:
+1-
+11
+0,
+#640000
+0!
+0C
+0D
+#680000
+1!
+1C
+1D
+#720000
+1&
+0!
+1H
+0C
+0D
+1M
+0K
+#760000
+0&
+1!
+0H
+1C
+1D
+0M
+1K
+#800000
+0!
+0C
+0D
+#840000
+1!
+1C
+1D
+#880000
+0!
+0C
+0D
+#920000
+1!
+1C
+1D
+#960000
+0!
+0C
+0D
+#1000000
